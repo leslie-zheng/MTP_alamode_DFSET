@@ -6,7 +6,7 @@ import numpy as np
 import glob
 
 # Script to convert VASP outputs(MTP fake vasprun.xml) to a single DFSET file for ALAMODE
-# author: Jiong-Zhi Zheng
+# author: Jiongzhi Zheng
 # email: jiongzhi.zheng@dartmouth.edu
 # institution: Dartmouth College
 # date: 2024-11-13
