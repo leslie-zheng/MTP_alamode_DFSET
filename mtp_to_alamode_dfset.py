@@ -61,7 +61,7 @@ with open(path + "DFSET", "w") as f:
         disps = positions_frac - phonon.supercell.get_scaled_positions()
 
         # Adjust displacements to be within -0.5 to 0.5 range
-        disps = np.where(disps > 0.5, disps - 1.0, disps)
+        disps = np.where(disps >= 0.5, disps - 1.0, disps)
         disps = np.where(disps < -0.5, disps + 1.0, disps)
 
         # Convert fractional displacements to Cartesian coordinates
