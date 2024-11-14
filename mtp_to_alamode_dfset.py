@@ -71,7 +71,7 @@ with open(path + "DFSET", "w") as f:
 
         # Convert units: positions from Angstrom to Bohr and forces from eV/Angstrom to Ryd/bohr
         positions_cart *= 1.88973  # Angstrom to Bohr
-        forces *= 0.138935457      # eV/Angstrom to Ryd/bohr
+        forces *= 0.038935     # eV/Angstrom to Ryd/bohr
 
         # Write the data to DFSET with a header line for each file
         f.write(f"# {vasprun_file}\n")
